@@ -1,0 +1,182 @@
+body {
+    background: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 !important;
+    background-size: 100% cover!important;
+    overflow:hidden;
+    display: block;
+} 
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+                                 
+
+.postButtons {
+    margin-top: 20%;
+    margin-left: 43%;
+    align-items: center;
+}
+
+.post {
+    background-color: #f7dc6f;
+    padding: 7px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.in {
+    width: 95%;
+    border: none;
+    padding: 6px;
+    background-color: darkgrey;
+    
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
+    margin-bottom: 40%;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(28,28,28,0.7);
+}
+
+/* Modal Content */
+.modal-content {
+    display: flex;
+    position: relative;
+    background-color:#ffffff;
+    margin: auto;
+    margin-top: 7%;
+    flex-direction: column;
+    border: 1px solid #888;
+    align-items: center;
+    width: 25%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+    margin-top: 2%;
+    width: 80%;
+  padding: 2px;
+  color: black;
+    font-family: 'Joseph Sans',sans-serif;
+}
+
+.modal-body {
+    padding: 2px;
+    width: 80%;
+    height: auto;
+    font-family: 'Joseph Sans',sans-serif;
+
+}
+
+.modal-footer {
+    padding: 2px;
+    color: white;
+    width: 79%;
+    font-family: 'Joseph Sans',sans-serif;
+
+}
+
+.btn-def {
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: darkseagreen;
+    border: none;
+    margin-bottom: 15%;
+    cursor: pointer;
+
+}
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
+    margin-bottom: 40%;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%;/* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(28,28,28,0.7);
+}
+
+#link{
+    color: black;
+}
+
+#signLink{
+    color: blue;
+    cursor: pointer;
+}
+
+#create-btn{
+    width: 25%;
+    background-color: green;
+    float: right;
+}
+
+#close-btn{
+    width: 25%;
+    background-color: red;
+    float: right;
+}
+
+#inputTitle{
+    opacity: 0.6;
+}
+
+#details{
+    width: 97%;
+}
+
+#myModelpost{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+#postmodal{
+    display: flex;
+    flex-direction: row-reverse;
+}

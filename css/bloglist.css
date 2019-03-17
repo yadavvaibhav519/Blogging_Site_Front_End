@@ -1,0 +1,344 @@
+.post {
+    position: relative;
+    width: 40%;
+    justify-content:space-around;
+    height: 20%;
+    background: #fff;
+    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin: 30px;
+    float:left;
+    border-radius: 15px;
+}
+    
+.post-left {
+    width: 15%;            
+    max-width: 15%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+}
+
+.post-content {
+    width: 75%; 
+    display: table-cell;
+    flex-wrap: wrap;
+    text-align: left;
+    background-color: #E8E8E8;
+    color: #000000;
+    border-radius: 0 15px 15px 0;
+    padding: 0 10px 15px 20px;      
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post-title {
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    color: #2b312b;
+    font-size: 25px;
+    height: 25px;
+}
+
+.post-more {
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.post-desc {
+    height: 80px;
+    margin-bottom: 0 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 135%;
+}
+
+#dots{
+    float: right;
+    padding-right: 10px;
+    font-size: 40px;
+    line-height: 50%;
+    cursor: pointer;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 !important;
+    color: #fff;
+    background-color: orange;
+    background-size: 2000% 2000%;
+}
+
+.allPostsContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
+    margin-bottom: 40%;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(28,28,28,0.7);
+}
+
+/* Modal Content */
+.modal-content {
+    display: flex;
+    position: relative;
+    background-color:#ffffff;
+    margin: auto;
+    flex-direction: column;
+    border: 1px solid #888;
+    align-items: center;
+    width: 25%;
+    height: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    width: 80%;
+    padding: 2px;
+    color: black;
+    font-family: 'Joseph Sans',sans-serif;
+}
+
+.modal-body {
+    padding: 2px;
+    width: 80%;
+    height: auto;
+    color: black;
+    font-family: 'Joseph Sans',sans-serif;
+
+}
+
+.modal-footer {
+    padding: 2px;
+    color: white;
+    width: 79%;
+    font-family: 'Joseph Sans',sans-serif;
+
+}
+
+.btn-def {
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: darkseagreen;
+    border: none;
+    margin-bottom: 15%;
+    cursor: pointer;
+
+}
+
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
+    margin-bottom: 40%;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%;/* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(28,28,28,0.7);
+ 
+}
+
+#link{
+    color: black;
+}
+
+#signLink{
+    color: blue;
+    cursor: pointer;
+}
+
+.in {
+    width: 95%;
+    border: none;
+    padding: 6px;
+    background-color: darkgrey;
+    
+}
+
+.header {
+    font-family: 'Satisfy', cursive; 
+    color: blue;
+    font-size: 200%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 100%;
+
+}
+
+#sub{
+    font-family: 'Marck Script',cursive;
+    font-size: 50%;
+    color: black;
+    line-height: 50%;
+}
+
+.btn {
+    float: right;
+    color: white;
+    background-color: blue;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border: 1px;
+    margin: 3px;
+    font-family: monospace;
+    cursor: pointer;
+    font-size: 50%;
+}
+
+.modcl {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
+    margin-bottom: 40%;
+    left: 0;
+    top: 0;
+    width: 120%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(28,28,28,0.7);
+ 
+}
+
+/* Modal Content */
+.modcontent {
+    display: flex;
+    position: fixed;
+    top: 35%;
+    left: 37%;
+    background-color:#ffffff;
+    margin: auto;
+    flex-direction: column;
+    border: 1px solid #888;
+    align-items: center;
+    width: 25%;
+    height: auto;;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.modhead {
+    width: 80%;
+    padding: 2px;
+    color: black;
+    font-family: 'Joseph Sans',sans-serif;
+    margin: 15px;
+}
+
+.modfoot {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    color: white;
+    width: 79%;
+    font-family: 'Joseph Sans',sans-serif;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#yesBtn{
+    background-color:red;
+    border: none;
+    font-size: 80%;
+    width: 40%;
+    color: white;
+    cursor: pointer;
+}
+
+#noBtn{
+    background-color: forestgreen;
+    width: 40%;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#one{
+    
+}
+
+#two{
+    float: right;
+}
+
+#four{
+    float: right;
+}
+
+#five{
+    margin-left: 30%;
+    justify-content: center;
+}
+
+.bin{
+    cursor: pointer;
+    float: right;
+}

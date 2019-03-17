@@ -1,0 +1,206 @@
+.blogTite {
+    font-size: 150%;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+}
+
+.blogText {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.blogAuthor {
+    padding: 0px 0px 0px 10px;
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+}
+
+.blogContent {
+    text-align: justify;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+.in {
+    width: 95%;
+    border: none;
+    padding: 6px;
+    background-color: darkgrey; 
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
+    margin-bottom: 40%;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(28,28,28,0.7);   
+}
+
+/* Modal Content */
+.modal-content {
+    display: flex;
+    position: relative;
+    background-color:#ffffff;
+    margin: auto;
+    flex-direction: column;
+    border: 1px solid #888;
+    align-items: center;
+    width: 25%;
+    height: auto;;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    width: 80%;
+    padding: 2px;
+    color: black;
+    font-family: 'Joseph Sans',sans-serif;
+}
+
+.modal-body {
+    padding: 2px;
+    width: 80%;
+    height: auto;
+    font-family: 'Joseph Sans',sans-serif;
+}
+
+.modal-footer {
+    padding: 2px;
+    color: white;
+    width: 79%;
+    font-family: 'Joseph Sans',sans-serif;
+
+}
+
+.btn-def {
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: darkseagreen;
+    border: none;
+    margin-bottom: 15%;
+    cursor: pointer;
+}
+
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
+    margin-bottom: 40%;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%;/* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(28,28,28,0.7);
+}
+
+.cmmtPara {
+    background-color: white;
+    width: 90%;
+    padding: 2%;
+    left: 10%;   
+}
+
+#link{
+    color: black;
+}
+
+#signLink{
+    color: blue;
+    cursor: pointer;
+}
+
+#editBtn{
+    font-family: monospace;
+    background-color: deeppink;
+    font-size: 55%;
+    float: right;
+    padding: 1% 1.5%;
+    color: white;
+    box-shadow: 0px 5px 20px  hotpink;
+    border: none;  
+}
+
+#saveBtn{
+    font-family: monospace;
+    background-color: deeppink;
+    font-size: 55%;
+    float: right;
+    padding: 1% 1.5%;
+    color: white;
+    box-shadow: 0px 5px 20px  hotpink;
+    border: none;  
+}
+
+#likeBtn{
+    font-family: monospace;
+    background-color: deeppink;
+    font-size: 100%;
+    padding: 0.8% 3%;
+    color: white;
+    box-shadow: 0px 5px 20px  hotpink;
+    border: none;
+    border-radius: 5%;
+}
+
+#comment{
+    width: 80%;
+}
+
+#commentBtn{
+    font-family: monospace;
+    background-color: deeppink;
+    font-size: 120%;
+    padding: 0.8% 3%;
+    color: white;
+    box-shadow: 0px 5px 20px  hotpink;
+    border: none;
+    border-radius: 5%;
+}
+
+#cmmtDiv{
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
